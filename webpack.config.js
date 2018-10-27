@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development', // 'production' 'development'
+  mode: 'production', // 'production' 'development'
   entry: './src/index.js',
   output: {
     filename: 'index.js',
@@ -16,6 +16,13 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.s[ca]ss$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'sass-loader'
+        }
       }
     ]
   },
@@ -25,6 +32,7 @@ module.exports = {
       'node_modules'
     ],
     extensions: ['*', '.js', '.jsx']
+    // mainFiles: ['index', '.js']
   },
   devServer: {
     contentBase: './app',

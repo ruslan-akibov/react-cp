@@ -1,5 +1,5 @@
 {
-  "name": "cp",
+  "name": "react-cp",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,9 @@
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "@babel/runtime": "^7.1.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1",
     "whatwg-fetch": "^3.0.0"
   },
